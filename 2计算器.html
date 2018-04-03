@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				
+				var oInput01 = document.getElementById('input01');
+				var oInput02 = document.getElementById('input02');
+				var oBtn = document.getElementById('btn');
+
+				oBtn.onclick = function() {
+
+                    var val01 = oInput01.value;
+                    var val02 = oInput02.value;
+                    console.log("TAG1:", val02);
+//					var rs1 = add(val01,val02);
+//					alert(rs1);
+                    myfunction(val01, val02);
+                }
+                function add(a,b){
+                    var c = parseInt(a)+parseInt(b);
+                    return c;
+                }
+
+                function sub(a,b){
+                    var c = parseInt(a)-parseInt(b);
+                    return c;
+                }
+                function mul(a,b){
+                    var c = parseInt(a)*parseInt(b);
+                    return c;
+                }
+                function div(a,b){
+                    var c = parseInt(a)/parseInt(b);
+                    return c;
+                }
+
+                function myfunction(a,b){
+                    console.log("TAG2:",a);
+                    var sec = document.getElementById("sec");
+                    console.log("TAG3:",b);
+                    var index=sec.selectedIndex;
+
+
+
+                    if (sec.options[index].value=="1"){
+                        add(a,b);
+                        console.log("TAG4:", add(a,b));
+                        alert('计算完成!\n计算结果为'+add(a,b));
+                    }
+                    else if(sec.options[index].value=="2"){
+                        sub(a,b);
+                        console.log("TAG5:",sub(a,b));
+                        alert('计算完成!\n计算结果为'+sub(a,b));
+                    }else if(sec.options[index].value==3){
+                        mul(a,b);
+                        alert('计算完成!\n计算结果为'+mul(a,b));
+                    }else if(sec.options[index].value==4){
+                        div(a,b);
+                        alert('计算完成!\n计算结果为'+div(a,b));
+                    }
+                }
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		
+		<input type="text" name="" id="input01" value=""  />
+		<select id="sec" name="" >
+			<option  value="1" selected="selected" >+</option>
+			<option  value="2">-</option>
+			<option  value="3">*</option>
+			<option  value="4">/</option >
+			
+		<input type="text" name="" id="input02" value=""  />
+		
+		<input type="button" name="" id="btn" value="计算" />
+		</select>
+	</body>
+</html>
