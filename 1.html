@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>请输入注册信息</title>
+</head>
+
+<!--<body>-->
+
+
+<script type="text/javascript">
+    var list = [{
+        "name": "中国",
+        "value": "86",
+        "province": [{
+            "name": "湖北省",
+            "value": "430000",
+            "city": [{
+                "name": "武汉市",
+                "value": "wh",
+                "xianqu": [{
+                    "name": "武昌区",
+                    "value": "q1"
+                }, {
+                    "name": "东湖西区",
+                    "value": "q2"
+                }]
+                    },
+                    {
+                    "name": "黄石市",
+                    "value": "hs",
+                    "xianqu": [{
+                        "name": "黄石港区",
+                        "value": "q3"
+                    }, {
+                        "name": "西塞山区",
+                        "value": "q4"
+                    }]
+                    },
+                    {
+                    "name": "十堰市",
+                    "value": "sy",
+                    "xianqu": [{
+                        "name": "郧阳区",
+                        "value": "q5"
+                    }, {
+                        "name": "茅箭区",
+                        "value": "q6"
+                    }]
+                    },
+                    {
+                    "name": "宜昌市",
+                    "value": "yc",
+                    "xianqu": [{
+                        "name": "当阳区",
+                    }, {
+                        "name": "茅箭区",
+                    }]
+                    },
+                    {
+                    "name": "襄阳市",
+                    "value": "xy",
+                    "xianqu": [{
+                        "name": "宜城市",
+                        "value":"yc"
+                    }, {
+                        "name": "枣阳市",
+                        "value":"zy"
+                    }]
+                     },
+                    {
+                    "name": "鄂州市",
+                    "value": "ez",
+                    "xianqu": [{
+                        "name": "鄂城区",
+                        "value":"ec"
+
+                    },
+                        {
+                            "name": "华容区",
+                            "value":"hr"
+                        }]
+                    },
+                    {
+                    "name": "荆州市",
+                    "value": "jz",
+                    "xianqu": [{
+                        "name": "荆州区",
+                        "value":"dd"
+
+                    },
+                        {
+                            "name": "襄阳区",
+                            "value":"xy"
+                        }]
+                    }
+            ]
+        },
+            {
+                "name": "江西省",
+                "value": "340000",
+                "city": [{
+                    "name": "南昌市",
+                    "value": "nc",
+                    "xianqu": [{
+                        "name": "东湖区",
+                        "value": "dh"
+                    },
+                        {
+                            "name": "青山湖区",
+                            "value": "qx"
+                        }]
+                },
+                    {
+                        "name": "赣州市",
+                        "value": "gz",
+                        "xianqu": [{
+                            "name": "章贡区",
+                            "value": "zg"
+                        },
+                            {
+                                "name": "黄金开发区",
+                                "value": "hj"
+                            },
+                            {
+                                "name": "南康市",
+                                "value": "nk"
+                            },
+                            {
+                                "name": "瑞金市",
+                                "value": "rj"
+                            },
+                            {
+                                "name": "赣县",
+                                "value": "gx"
+                            }
+                            ,
+                            {
+                                "name": "信丰县",
+                                "value": "gx"
+                            }
+                        ]
+
+                    },
+                    {
+                        "name": "九江市",
+                        "value": "jj",
+                        "xianqu": [{
+                            "name": "浔阳区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "庐山区",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "萍乡市",
+                        "value": "px",
+                        "xianqu": [{
+                            "name": "安源区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "湘东区",
+                                "value": "hr"
+                            }]
+
+                    },
+                    {
+                        "name": "新余市",
+                        "value": "xy",
+                        "xianqu": [{
+                            "name": "渝水区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "新余经济开发区",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "鹰潭市",
+                        "value": "ez",
+                        "xianqu": [{
+                            "name": "月湖区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "贵溪市",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "宜春市",
+                        "value": "jz",
+                        "xianqu": [{
+                            "name": "袁州区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "樟树市",
+                                "value": "hr"
+                            }]
+                    }
+                ]
+            },
+            {
+                "name": "河北省",
+                "value": "100000",
+                "city": [{
+                    "name": "邯郸市",
+                    "value": "hd",
+                    "xianqu": [{
+                        "name": "1区",
+                        "value": "1"
+                    },
+                        {
+                            "name": "2区",
+                            "value": "hr"
+                        }]
+                },
+                    {
+                        "name": "保定市",
+                        "value": "bd",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "石家庄",
+                        "value": "sjz",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    }
+                ]
+            },
+
+            {
+                "name": "湖南省",
+                "value": "440000",
+                "city": [{
+                    "name": "长沙",
+                    "value": "cs",
+                    "xianqu": [{
+                        "name": "1区",
+                        "value": "1"
+                    },
+                        {
+                            "name": "2区",
+                            "value": "hr"
+                        }]
+                },
+                    {
+                        "name": "株洲市",
+                        "value": "zz",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "衡阳市",
+                        "value": "hy",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    }
+                ]
+            }
+
+        ]
+    },
+        {
+            "name": "美国",
+            "value": "22",
+            "province": [{
+                "name": "阿肯色",
+                "value": "990000",
+                "city": [{
+                    "name": "纽约",
+                    "value": "ny",
+                    "xianqu": [{
+                        "name": "1区",
+                        "value": "1"
+                    },
+                        {
+                            "name": "2区",
+                            "value": "hr"
+                        }]
+                },
+                    {
+                        "name": "华盛顿",
+                        "value": "hsd",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    },
+                    {
+                        "name": "波士顿",
+                        "value": "bsd",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    }
+                ]
+            },
+
+                {
+                    "name": "阿哈哈",
+                    "value": "980000",
+                    "city": [{
+                        "name": "AA",
+                        "value": "ahd",
+                        "xianqu": [{
+                            "name": "1区",
+                            "value": "1"
+                        },
+                            {
+                                "name": "2区",
+                                "value": "hr"
+                            }]
+                    },
+                        {
+                            "name": "BB",
+                            "value": "abd",
+                            "xianqu": [{
+                                "name": "1区",
+                                "value": "1"
+                            },
+                                {
+                                    "name": "2区",
+                                    "value": "hr"
+                                }]
+                        },
+                        {
+                            "name": "CC",
+                            "value": "asjz",
+                            "xianqu": [{
+                                "name": "1区",
+                                "value": "1"
+                            },
+                                {
+                                    "name": "2区",
+                                    "value": "hr"
+                                }]
+                        }
+                    ]
+                }
+            ]
+
+        }
+    ];
+
+    function init() {
+        var _country = document.getElementById("country");//得到国家
+        for (var e in list) {//循环遍历叫list的Jason数组
+            var opt_1 = new Option(list[e].name, list[e].value);//新增选择项，有多少国家就添加多少
+            _country.add(opt_1);
+        }
+    }
+
+    function toProvince() {
+        var _country = document.getElementById("country");
+        var _province = document.getElementById("province");
+        var _city = document.getElementById("city");
+        var v_country = _country.value;//设定好国家的值
+
+        _province.options.length = 1;//省的长度初始化为1
+        _city.options.length = 1;//市也是
+
+        for (var e in list) {//循环遍历
+            if (list[e].value == v_country) {//刚好是这个国家
+                for (var p in list[e].province) {//循环添加省
+                    var opt_2 = new Option(list[e].province[p].name, list[e].province[p].value);
+                    _province.add(opt_2);
+
+                }
+                break;
+            }
+        }
+    }
+
+    function toCity() {
+        var _country = document.getElementById("country");
+        var _province = document.getElementById("province");
+        var _city = document.getElementById("city");
+
+        var v_country = _country.value;
+        var v_province = _province.value;
+
+
+        for (var e in list) {
+            if (list[e].value == v_country) {
+                for (var p in list[e].province) {
+                    //alert(list[e].province[p].value);
+                    if (list[e].province[p].value == v_province) {
+                        // alert(list[e].province[p].value);
+                        for (var cc in list[e].province[p].city) {
+                            var opt_3 = new Option(list[e].province[p].city[cc].name, list[e].province[p].city[cc].value);
+                            _city.add(opt_3);
+                        }
+
+                        return;
+                    }
+
+                }
+                break;
+            }
+        }
+    }
+
+    function toXianqu() {
+        var _country = document.getElementById("country");
+        var _province = document.getElementById("province");
+        var _city = document.getElementById("city");
+        var _xianqu = document.getElementById("xianqu");
+        var v_country = _country.value;
+        var v_province = _province.value;
+        var v_city = _city.value;
+
+        _xianqu.options.length = 1;
+
+        for (var e in list) {
+            if (list[e].value == v_country) {
+                for (var p in list[e].province) {
+                    if (list[e].province[p].value == v_province) {
+                        for (var cc in list[e].province[p].city) {
+                            if (list[e].province[p].city[cc].value == v_city) {
+                                for (var dd in list[e].province[p].city[cc].xianqu) {
+                                    var opt_3 = new Option(list[e].province[p].city[cc].xianqu[dd].name, list[e].province[p].city[cc].xianqu[dd].value);
+                                    _xianqu.add(opt_3);
+                                }
+                            }
+                        }
+                        return;
+                    }
+                }
+                break;
+            }
+        }
+    }
+
+    function invalid() {
+        var _name = document.getElementById("account");
+        var _account = document.getElementById("account");
+        var _password = document.getElementById("password");
+        var _password2 = document.getElementById("password2");
+        var _phone = document.getElementById("phonenumber");
+        if (_name.value.length == 0) {
+            alert("请输入姓名！");
+        } else if (_account.value.length == 0) {
+            console.log("TAG", "_account.value");
+            alert("请输入用户名！");
+        } else if (_phone.value.length == 0) {
+            alert("请输入电话号码！");
+        }
+        else if (_password.value.length == 0 || _password2.value.length == 0) {
+            alert("请输入密码！");
+        } else if (_password.value != _password2.value) {
+            alert("两次输入密码不相同！");
+        } else if (account.value.length > 11) {
+            alert("账号输入不合法！");
+        }else{
+            alert("注册成功！");
+        }
+    }
+</script>
+<body onload="init();" style="width: 100%">
+<div style="background-image: url('image/header.jpg');margin-left:5%;width: 90%;height: 326px;">
+    <h2 style="text-align: center;"><br><br>请填写注册信息！</h2></div>
+<div id="div1" style="background: antiquewhite;">
+    <form style="align-content:center">
+        <p style="margin-left:42%">用户名:<input id="name" type="text"/></p>
+        <p style="margin-left:43%">账号:<input id="account" type="text"/>（必填项* 账号1-10位）</p>
+        <p style="text-align: center">密码:<input id="password" type="password"/></p>
+        <p style="margin-left:37.4%">请再次输入密码:<input id="password2" type="password"/></p>
+        <p style="margin-left: 41.1%">电话号码:<input id="phonenumber" type="text"/></p>
+        <p style="margin-left: 41.1%">电子邮箱:<input type="email"/></p>
+        <p style="margin-left:41%">出生日期:<input type="date"/></p>
+
+    </form>
+    <p style="margin-left:43%">籍贯:
+        <select id="country" onchange="toProvince();">
+            <option value="-1">--请选择国家---</option>
+        </select>
+        <select id="province" onchange="toCity();">
+            <option value="-1">--请选择省份---</option>
+        </select>
+        <br>
+        <select id="city" style="margin-top: 20px;margin-left:42px" onchange="toXianqu()">
+            <option value="-1">--请选择市区---</option>
+        </select>
+        <select id="xianqu">
+            <option value="-1">--请选择县区---</option>
+        </select>
+    </p>
+</div>
+<button style="margin-left: 50%;background: antiquewhite;width: 60px ;height: 30px" onclick="invalid()">提交</button>
+</body>
+
+</html>
